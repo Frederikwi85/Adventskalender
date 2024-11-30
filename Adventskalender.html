@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventskalender</title>
+    <style>
+        .hidden { display: none; }
+        .visible { display: block; }
+    </style>
+    <script>
+        function showContent() {
+            const today = new Date();
+            const day = today.getDate();
+
+            for (let i = 1; i <= 24; i++) {
+                const element = document.getElementById(`day-${i}`);
+                if (i <= day) {
+                    element.className = 'visible';
+                }
+            }
+        }
+        window.onload = showContent;
+    </script>
+</head>
+<body>
+    <h1>Adventskalender</h1>
+    <ul>
+        <li id="day-1" class="hidden">1. Dezember: <a href="https://open.spotify.com/track/6XJvB9UZYiJiUh8gWGWfXd">Everyday - Buddy Holly</a></li>
+        <li id="day-2" class="hidden">2. Dezember: <a href="https://open.spotify.com/track/1LXYTGWcCFXHCMVpCgdSvw">Stranger - Ben Caplan</a></li>
+        <!-- Wiederhole das für alle Tage bis zum 24. -->
+        <li id="day-24" class="hidden">24. Dezember: <a href="https://open.spotify.com/track/4Tkj9L81NcKffRHi6L6bk1">Green Valley - Puscifer</a></li>
+    </ul>
+</body>
+</html>
