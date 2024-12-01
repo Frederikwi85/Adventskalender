@@ -1,15 +1,198 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J Adventskalender</title>
-</head>
-<body>
-    <h1>Hallo J</h1>
-    <p>Lieber mal Songs statt Süßem.</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventskalender</title>
+  <style>
+    .day {
+      margin: 10px 0;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .content {
+      display: none;
+      margin-left: 20px;
+    }
+  </style>
+  <script>  <div class="day" onclick="toggleContent(1)">
+    <b>Tag 1</b>
+    <div id="content-1" class="content">
+      <a href="https://open.spotify.com/track/6XJvB9UZYiJiUh8gWGWfXd" target="_blank">Everyday - Buddy Holly</a>
+    </div>
+  </div>
 
-<iframe src="Adventskalender.html" width="100%" height="600px"></iframe>
+  <div class="day" onclick="toggleContent(2)">
+    <b>Tag 2</b>
+    <div id="content-2" class="content">
+      <a href="https://open.spotify.com/track/1LXYTGWcCFXHCMVpCgdSvw" target="_blank">Stranger - Ben Caplan</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(3)">
+    <b>Tag 3</b>
+    <div id="content-3" class="content">
+      <a href="https://open.spotify.com/track/2z6unBW7oLWfll7VrRaztO" target="_blank">Ich schreib meine Gedanken - Fortuna Ehrenfeld</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(4)">
+    <b>Tag 4</b>
+    <div id="content-4" class="content">
+      <a href="https://open.spotify.com/track/6Z0cQcmQqgD4a9Q9OgTcd0" target="_blank">Ich verprügelte die Sextouristen in Bangkok - Danger Dan</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(5)">
+    <b>Tag 5</b>
+    <div id="content-5" class="content">
+      <a href="https://open.spotify.com/track/5IqWESA4gIFbNxIDtTEQ4B" target="_blank">A Bad Feeling About Anna Karenina - Phoebe Kreutz</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(6)">
+    <b>Tag 6</b>
+    <div id="content-6" class="content">
+      <a href="https://open.spotify.com/track/1FFNZFw4qFv5XDM8OsBskk" target="_blank">Queen of the Wolves - Clara Luzia</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(7)">
+    <b>Tag 7</b>
+    <div id="content-7" class="content">
+      <a href="https://open.spotify.com/track/3azYluBlkWzNHXXlUUUqqR" target="_blank">Geld verdirbt den Charakter - Dota Kehr</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(8)">
+    <b>Tag 8</b>
+    <div id="content-8" class="content">
+      <a href="https://open.spotify.com/track/2GPJRy7UIfZexAvOSoWUuX" target="_blank">So Far Around the Bend - The National</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(9)">
+    <b>Tag 9</b>
+    <div id="content-9" class="content">
+      <a href="https://open.spotify.com/track/0RgjEkSbeuStKfT2Pa4Zai" target="_blank">Reincarnated - Kendrick Lamar</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(10)">
+    <b>Tag 10</b>
+    <div id="content-10" class="content">
+      <a href="https://open.spotify.com/track/4msgnlHYjmEiTsixX6igpG" target="_blank">Raised All Wrong - Jim Bryson, The Weakerthans</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(11)">
+    <b>Tag 11</b>
+    <div id="content-11" class="content">
+      <a href="https://open.spotify.com/track/61ctmlBSUFQIBcUxqZT42J" target="_blank">Stay A Little Longer - Mira Lu Kovacs</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(12)">
+    <b>Tag 12</b>
+    <div id="content-12" class="content">
+      <a href="https://open.spotify.com/track/0KyIfYYxcxNPODhESiODtJ" target="_blank">Running Up That Hill (A Deal With God) - Scott Bradlee's Postmodern Jukebox, Sweet Megg</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(13)">
+    <b>Tag 13</b>
+    <div id="content-13" class="content">
+      <a href="https://open.spotify.com/track/0McfggUNEYRpJcd06n377V" target="_blank">Fuck the Government, I Love You - The Burning Hell, Ariel Sharratt, Mathias Kom</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(14)">
+    <b>Tag 14</b>
+    <div id="content-14" class="content">
+      <a href="https://open.spotify.com/track/29Y3hgv7bZrZsGAIHoFvmf" target="_blank">City In A Bottle (Live @ 2023) - Shakey Graves</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(15)">
+    <b>Tag 15</b>
+    <div id="content-15" class="content">
+      <a href="https://open.spotify.com/track/2mbJbFWnFW08hIY0HhUx1e" target="_blank">Affection - Instrumental - Black Sea Dahu</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(16)">
+    <b>Tag 16</b>
+    <div id="content-16" class="content">
+      <a href="https://open.spotify.com/track/1U6wvbyO02FPT2RzEWEQhH" target="_blank">A Girl In Port - Okkervil River</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(17)">
+    <b>Tag 17</b>
+    <div id="content-17" class="content">
+      <a href="https://open.spotify.com/track/2Qwa7UIuzodgFFXSXkUFSN" target="_blank">Hesitation Blues - Janis Joplin, Jorma Kaukonen</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(18)">
+    <b>Tag 18</b>
+    <div id="content-18" class="content">
+      <a href="https://open.spotify.com/track/6vC7mF2CXYW6MVF2voO4FU" target="_blank">Friday I’m In Love (Recorded at Spotify Studios NYC) - Phoebe Bridgers</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(19)">
+    <b>Tag 19</b>
+    <div id="content-19" class="content">
+      <a href="https://open.spotify.com/track/5t6nqF26GUQEgMIv40aSWh" target="_blank">The Town where I'm Livin Now - Grandaddy</a>
+    </div>
+  </div>
+
+ <div class="day" onclick="toggleContent(20)">
+    <b>Tag 20</b>
+    <div id="content-20" class="content">
+      <a href="https://open.spotify.com/track/3Bh1CSqVn2SdyqbhupmmFk" target="_blank">Ne Me Quitte Pas - Nina Simone</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(21)">
+    <b>Tag 21</b>
+    <div id="content-21" class="content">
+      <a href="https://open.spotify.com/track/0uFkSsQOL3L2wycYf85SoQ" target="_blank">Straße der Gewalt - Acht Eimer Hühnerherzen</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(22)">
+    <b>Tag 22</b>
+    <div id="content-22" class="content">
+      <a href="https://open.spotify.com/track/6xXbVcX1B7ae1CVqoNZkHl" target="_blank">OD'd in Denver (feat. Matt Sweeney) - Bill Callahan, Bonnie Prince Billy, Matt Sweeney</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(23)">
+    <b>Tag 23</b>
+    <div id="content-23" class="content">
+      <a href="https://open.spotify.com/track/0n7wQjThbAnXUroIZMDvZc" target="_blank">Nobody Wants to Be You - Dan Reeder</a>
+    </div>
+  </div>
+
+  <div class="day" onclick="toggleContent(24)">
+    <b>Tag 24</b>
+    <div id="content-24" class="content">
+      <a href="https://open.spotify.com/track/4Tkj9L81NcKffRHi6L6bk1" target="_blank">Green Valley - Puscifer</a>
+    </div>
+  </div>
 
 </body>
 </html>
+    function toggleContent(day) {
+      const content = document.getElementById(`content-${day}`);
+      content.style.display = content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <h1>Adventskalender - Songs statt Süßes!</h1>
+
+    
+
